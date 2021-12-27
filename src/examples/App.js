@@ -21,9 +21,80 @@ const App = () => {
             wrapperCol: {
                 span: 16,
             },
-            layout:'inline'
         },
         formList:[
+            {
+                formItem : {
+                    label:'text_area',
+                    name:'text_area',
+                },
+                formContent:{
+                    type:'text_area',
+                    placeholder:'请输入用户名',
+                }
+            },
+            {
+                formItem : {
+                    label:'date_picker',
+                    name:'date_picker',
+                },
+                formContent:{
+                    type:'date_picker',
+                }
+            },
+            {
+                formItem : {
+                    label:'Switch',
+                    name:'Switch',
+                    valuePropName:"checked"
+                },
+                formContent:{
+                    type:'switch',
+                }
+            },
+            {
+                formItem : {
+                    label:'radio',
+                    name:'radio',
+                },
+                formContent:{
+                    type:'radio',
+                    placeholder:'请输入用户名',
+                    attrs:{
+                        key:'id',
+                        value:'value'
+                    },
+                    list:[
+                        {id:1,value:'测试用例 => 1',disabled:true},
+                        {id:2,value:'测试用例 => 2'},
+                        {id:3,value:'测试用例 => 3'},
+                        {id:4,value:'测试用例 => 4'}
+                    ]
+                }
+
+            },
+            {
+                formItem : {
+                    label:'select',
+                    name:'select_list',
+                },
+                formContent:{
+                    type:'select',
+                    placeholder:'请输入用户名',
+                    allowClear:true,
+                    attrs:{
+                        key:'id',
+                        value:'value'
+                    },
+                    list:[
+                        {id:1,value:'测试用例 => 1',disabled:true},
+                        {id:2,value:'测试用例 => 2'},
+                        {id:3,value:'测试用例 => 3'},
+                        {id:4,value:'测试用例 => 4'}
+                    ]
+                }
+
+            },
             {
                 formItem : {
                     label:'用户',
@@ -53,6 +124,7 @@ const App = () => {
             },
             {
                 formItem:{
+                    wrapperCol:{ offset: 8, span: 16 },
                 },
                 formContent:{
                     type:'button',
