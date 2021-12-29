@@ -1,5 +1,5 @@
 import React from "react";
-import { FormCom } from "../lib";
+import { FormCom } from "../components";
 const  initialValues={
     username:'杨鹏飞',
     password:'123456',
